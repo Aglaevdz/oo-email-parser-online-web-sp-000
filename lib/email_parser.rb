@@ -13,7 +13,7 @@ class EmailParser
     #emails.split.collect do |address| address.split(',')
     #end
     #.flatten.uniq
-    @emails = @emails.gsub(/[\s,]/ ," ").split
+    @emails = @emails.collect(/[\s,]/ ," ").split
 		# @email is an array now
 		@emails.uniq
 	end
