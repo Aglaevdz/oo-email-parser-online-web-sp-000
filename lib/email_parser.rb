@@ -13,6 +13,6 @@ class EmailParser
     emails.split(/, ?/).each do |full_email|
     end
     #.flatten.uniq
-  #end
+  end
 
 end
